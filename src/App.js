@@ -39,7 +39,7 @@ function App() {
         expense.charge = values.charge;
         expense.amount = +values.amount;
         setExpenses(expenses);
-        toast.warm("Expense edited");
+        toast.warn("Expense edited");
         setEdit(false);
       } else {
         const expense = {
@@ -68,7 +68,7 @@ function App() {
         return item.id !== id;
       })
     );
-    toast.warm("Expense deleted");
+    toast.warn("Expense deleted");
   };
   //edit expense
   const handleEdit = id => {
